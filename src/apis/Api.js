@@ -3,7 +3,7 @@ import axios from "axios";
 // const baseURL = "http://sapphire-loan.test";
 // const baseURL = "http://127.0.0.1:8000";
 
-const baseURL = "https://192.168.1.46";
+const baseURL = "";
 // const baseURL = "https://api-pro.sentiflex.com";
 
 let Api = axios.create({
