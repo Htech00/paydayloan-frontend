@@ -1,5 +1,6 @@
 import Api from "./Api";
 import store from "@/store";
+import Csrf from "./Csrf";
 
 export default {
   async register(form) {
@@ -36,7 +37,7 @@ export default {
   },
 
   async login(form) {
-    // await Csrf.getCookie();
+    await Csrf.getCookie();
 
     return Api.post("/api/user/login", form);
   },
