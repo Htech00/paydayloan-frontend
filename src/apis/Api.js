@@ -8,12 +8,9 @@ const baseURL = "http://192.168.1.46";
 
 let Api = axios.create({
   baseURL: baseURL,
-  withCredentials: true,
   headers: {
-    Accept: "application/json",
     'x-sentinel-key': '6552a219-b30a-4764-95b4-d7996a74ed7c'
-  },
-    maxRedirects: 0,
+  }
 });
 
 // Api.defaults.withCredentials = true;
@@ -21,9 +18,9 @@ let Api = axios.create({
 // Api.defaults.withXSRFToken = true;
 //ok
 
-// Api.defaults.headers.common['Accept'] = 'application/json';
+Api.defaults.headers.common['Accept'] = 'application/json';
 
 
-// Api.defaults.maxRedirects = 0;
+Api.defaults.maxRedirects = 0;
 
 export default Api;
