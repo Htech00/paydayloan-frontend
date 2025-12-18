@@ -1,27 +1,28 @@
 import Api from "./Api";
 import store from "@/store";
+import Csrf from "./Csrf";
 
 export default {
   async register(form) {
-    // await Csrf.getCookie();
+    await Csrf.getCookie();
 
     return Api.post("/api/user/register", form);
   },
 
   async getBanks() {
-    // await Csrf.getCookie();
+    await Csrf.getCookie();
 
     return Api.get("/api/banks");
   },
 
   async checkExistingUser(ippisNumber, phoneNumber, email) {
-    // await Csrf.getCookie();
+    await Csrf.getCookie();
 
     return Api.get(`api/user/details/ippis?ippis=${ippisNumber}&phone_number=${phoneNumber}&email=${email}`);
   },
 
   async validateAccount(form) {
-    // await Csrf.getCookie();
+    await Csrf.getCookie();
 
     return Api.post("api/banks/account/validate", form);
   },
@@ -36,7 +37,7 @@ export default {
   },
 
   async login(form) {
-    // await Csrf.getCookie();
+    await Csrf.getCookie();
 
     return Api.post("/api/user/login", form);
   },
@@ -48,11 +49,12 @@ export default {
   },
 
   async auth() {
-    const tokenData = store.getters['auth/token'];
-    return Api.get("/api/user", {
-      headers: {
-        Authorization: 'Bearer '+tokenData['token']
-      }
-    });
+    return Api.get("/api/user");
+    // const tokenData = store.getters['auth/token'];
+    // return Api.get("/api/user", {
+    //   headers: {
+    //     Authorization: 'Bearer '+tokenData['token']
+    //   }
+    // });
   }
 };
