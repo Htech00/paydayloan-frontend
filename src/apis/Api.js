@@ -30,7 +30,7 @@ import axios from "axios";
 
 const Api = axios.create({
   //baseURL: "http://192.168.1.46",Base url for the frontend localhost
-  baseURL: "/",// Base url for the server on same domain origin
+  baseURL: "http://127.0.0.1",// Base url for the server on same domain origin
   withCredentials: true,
   headers: {
     'x-sentinel-key': '050adbc2-4805-4684-8b92-722412dc1387',
