@@ -15,7 +15,7 @@
 //   }
 // });
 
-// // Api.defaults.withCredentials = true;
+Api.defaults.withCredentials = true;
 
 // // Api.defaults.withXSRFToken = true;
 // //ok
