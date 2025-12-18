@@ -15,7 +15,7 @@ let Api = axios.create({
 
 Api.defaults.withCredentials = true;
 
-// Api.defaults.withXSRFToken = true;
+Api.defaults.withXSRFToken = true;
 //ok
 
 Api.defaults.headers.common['Accept'] = 'application/json';
