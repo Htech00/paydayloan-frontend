@@ -110,7 +110,7 @@ export default {
             .catch(error => {
               this.processing = false;
 
-              if (error.response.status === 422) {
+              if (error.response?.status === 422) {
                 toast.error(error.response.data.message);
                 this.errors = error.response.data.errors;
               }
