@@ -2,7 +2,7 @@
   <BreadCrumb pageTitle="All Loans" />
   <CustomTable :propData="dataToPass" :callBack="moreRecords" :viewDetails="viewDetails" report="loans"
     :webAccessToken="webAccessToken" webAction="download-loans-report" :downloadStatusOptions="statusOptions"
-    downloadReportUrl="https://sapphire-api.digisparksolutions.ng/reports/download/credit" />
+    downloadReportUrl="http://192.168.1.46/reports/download/credit" />
 </template>
   
   <script>

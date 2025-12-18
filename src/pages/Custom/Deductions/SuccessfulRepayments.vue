@@ -6,7 +6,7 @@
     </div>
     <CustomTable :propData="dataToPass" :callBack="moreRecords" :viewDetails="viewDetails" report="repayments"
       :webAccessToken="webAccessToken" webAction="download-repayments-report" :downloadStatusOptions="statusOptions"
-          downloadReportUrl="https://sapphire-api.digisparksolutions.ng/reports/download/credit" />
+          downloadReportUrl="http://192.168.1.46/reports/download/credit" />
 
     <div class="modal fade uploadRepaymentFileModal" id="uploadRepaymentFileModal" ref="uploadRepaymentFileModal" tabindex="-1"
       aria-hidden="true">

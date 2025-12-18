@@ -139,7 +139,7 @@ const staffIdFile = ref();
 const validIdFile = ref();
 
 // const baseUrl = 'https://api-pro.sentiflex.com';
-const baseUrl = 'https://sapphire-api.digisparksolutions.ng';
+const baseUrl = 'http://192.168.1.46';
 
 // const baseUrl = "http://sapphire-loan.test";
 

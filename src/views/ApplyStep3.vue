@@ -181,7 +181,7 @@ const dateOfBirth = ref();
 const gender = ref();
 
 
-const baseUrl = 'https://sapphire-api.digisparksolutions.ng';
+const baseUrl = 'http://192.168.1.46';
 
 // const baseUrl = 'http://sapphire-loan.test';
 // const baseURL = 'https://api-pro.sentiflex.com';

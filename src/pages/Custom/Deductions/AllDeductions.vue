@@ -3,7 +3,7 @@
     <BreadCrumb pageTitle="All Deductions" />
     <CustomTable :propData="dataToPass" :callBack="moreRecords" :viewDetails="allItemActions" 
       button-text="Add Repayment" report="portfolio"  :webAccessToken="webAccessToken" webAction="download-portfolio-report" :downloadStatusOptions="statusOptions"
-    downloadReportUrl="https://sapphire-api.digisparksolutions.ng/reports/download/credit" />
+    downloadReportUrl="http://192.168.1.46/reports/download/credit" />
 
     <div class="modal fade createManualRepayment" id="createManualRepayment" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
