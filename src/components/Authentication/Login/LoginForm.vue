@@ -9,7 +9,7 @@
           <form @submit.prevent="login">
             <div class="form-group mb-15 mb-sm-20 mb-md-25">
               <label class="d-block text-black fw-semibold mb-10">
-                EmailAddress
+                Email Address
               </label>
               <input
                 type="email"

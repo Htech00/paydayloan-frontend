@@ -34,7 +34,7 @@ const Api = axios.create({
   baseURL: "http://192.168.1.46", // Base url for the server on same domain origin
   withCredentials: true,
   headers: {
-    'x-sentinel-key': '050adbc2-4805-4684-8b92-722412dc1387',
+    'x-sentinel-key': '6552a219-b30a-4764-95b4-d7996a74ed7c',
     'Accept-Encoding': 'gzip, deflate, br',
     'Connection': 'keep-alive',
     'Accept': 'application/json'
