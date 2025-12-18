@@ -15,7 +15,6 @@
 //   }
 // });
 
-Api.defaults.withCredentials = true;
 
 // // Api.defaults.withXSRFToken = true;
 // //ok
@@ -40,6 +39,7 @@ const Api = axios.create({
     'Accept': 'application/json'
   }
 });
+Api.defaults.withCredentials = true;
 
 // Only if you really need this
 // Api.defaults.maxRedirects = 0;
