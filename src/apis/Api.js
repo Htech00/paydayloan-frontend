@@ -15,6 +15,7 @@
 //   }
 // });
 
+// Api.defaults.withCredentials = true;
 
 // // Api.defaults.withXSRFToken = true;
 // //ok
@@ -30,7 +31,7 @@ import axios from "axios";
 
 const Api = axios.create({
   //baseURL: "http://192.168.1.46",Base url for the frontend localhost
-  baseURL: "http://localhost:8080", // Base url for the server on same domain origin
+  baseURL: "http://192.168.1.46", // Base url for the server on same domain origin
   withCredentials: true,
   headers: {
     'x-sentinel-key': '050adbc2-4805-4684-8b92-722412dc1387',
@@ -39,7 +40,8 @@ const Api = axios.create({
     'Accept': 'application/json'
   }
 });
-Api.defaults.withCredentials = true;
+
+// Api.defaults.withCredentials = true;
 
 // Only if you really need this
 // Api.defaults.maxRedirects = 0;
